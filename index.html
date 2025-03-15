@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lingual Window</title>
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
     <!-- Daisy UI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -26,40 +27,40 @@
       </style>
 </head>
 <body class="font-body">
-    <header class="w-11/12 mx-auto">
-        <nav>
-            <div class="navbar bg-base-100 shadow-sm">
+    <header class="border-b-2 border-[#C6BDBD] bg-linear-90 from-slate-200 via-gray-300 to-slate-100">
+        <nav class="w-10/12 mx-auto">
+            <div class="navbar px-0 py-7">
                 <div class="navbar-start">
-                  <a class="btn btn-ghost text-xl">
-                    English
+                  <a class="text-xl flex items-center">
+                    <span class="font-semibold">English&ensp;</span>
                     <img src="assets/images/logo.png" alt="">
-                    <span class="font-hind">জানালা</span>
+                    <span class="font-bangla">&ensp;জানালা</span>
                   </a>
                 </div>
                 <div class="navbar-end gap-4">
-                    <button class="btn">
+                    <a href="#faqShow" class="btn text-[#422AD5] border-[#422AD5]">
                         <img src="assets/images/question.png" alt="">
                         FAQ
-                    </button>
-                    <button class="btn">
+                    </a>
+                    <button class="btn text-[#422AD5] border-[#422AD5]">
                         <img src="assets/images/book-open.png" alt="">
                         Learn
                     </button>
-                    <a href="#faqSection" class="btn">
+                    <button class="btn text-[#422AD5] border-[#422AD5]">
                         <img src="assets/images/arrow-right.png" alt="">
                         Logout
-                    </a>
+                    </button>
                 </div>
               </div>
         </nav>
     </header>
-    <main class="w-11/12 mx-auto">
+    <main class="w-10/12 mx-auto">
         <section>
 
         </section>
         <!-- FAQ Start -->
-        <section id="faqSection" class="flex flex-col gap-5 pt-6 pb-20">
-            <div class="pb-10">
+        <section class="flex flex-col gap-5 pt-52 pb-52">
+            <div class="pb-10" id="faqShow">
                 <h2 class="text-center leading-10 font-bold text-3xl"><span class="text-[#00BCFF]">Frequently</span> Asked Questions</h2>
             </div>
             <div class="collapse collapse-plus bg-[#F8F8F8] rounded-2xl">
@@ -93,8 +94,26 @@
         </section>
         <!-- FAQ End -->
     </main>
-    <footer>
-
+    <footer class="py-24 border-t-2 border-[#FFEBEB]">
+        <div class="flex justify-between items-end mx-auto w-10/12">
+            <div>
+                <div class="flex items-center">
+                    <span>English&ensp;</span>
+                    <img src="assets/images/logo.png" alt="">
+                    <span class="font-bangla">&ensp;জানালা</span>
+                </div>
+                <p class="font-hind font-medium text-xl my-3">ইংরেজি শিখুন সহজে</p>
+                <p class="font-hind">Providing ED-Tech Applications since 2025</p>
+            </div>
+            <div class="pr-10">
+                <p class="text-sm font-semibold uppercase opacity-60 mb-4">Follow us</p>
+                <div class="flex items-center gap-3">
+                    <a href="#"><img src="assets/images/fb.png" alt=""></a>
+                    <a href="#"><img src="assets/images/youtube.png" alt=""></a>
+                    <a href="#"><img src="assets/images/instagram.png" alt=""></a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="assets/js/main.js"></script>
